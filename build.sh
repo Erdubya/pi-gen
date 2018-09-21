@@ -149,6 +149,14 @@ if [ -z "${IMG_NAME}" ]; then
 	exit 1
 fi
 
+if [ -z "${USERNAME}" ]; then
+    USERNAME="pi"
+fi
+
+if [ -z "${PASSWORD}" ]; then
+    PASSWORD="raspberry"
+fi
+
 export USE_QEMU="${USE_QEMU:-0}"
 export IMG_DATE="${IMG_DATE:-"$(date +%Y-%m-%d)"}"
 export IMG_FILENAME="${IMG_FILENAME:-"${IMG_DATE}-${IMG_NAME}"}"
@@ -173,6 +181,9 @@ export BASE_DIR
 export CLEAN
 export IMG_NAME
 export APT_PROXY
+
+export USERNAME
+export PASSWORD
 
 export STAGE
 export STAGE_DIR
