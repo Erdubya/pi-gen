@@ -36,6 +36,18 @@ The following environment variables are supported:
    but you should use something else for a customized version.  Export files
    in stages may add suffixes to `IMG_NAME`.
 
+ * `USERNAME` (Default: pi)
+
+    Sets a custom default user for the Pi, for cases such as mass deployments.
+
+ * `PASSWORD` (Default: raspberry)
+
+    Sets a custom password for the default user.
+
+ * `HOSTNAME` (Default: raspberry)
+
+    Changes the default hostname to the value given.
+
  * `APT_PROXY` (Default: unset)
 
    If you require the use of an apt proxy, set it here.  This proxy setting
