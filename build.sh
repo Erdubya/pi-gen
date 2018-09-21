@@ -140,6 +140,10 @@ if [ -z "${PASSWORD}" ]; then
     PASSWORD="raspberry"
 fi
 
+if [ -z "${HOSTNAME}" ]; then
+    HOSTNAME="raspberry"
+fi
+
 export USE_QEMU="${USE_QEMU:-0}"
 export IMG_DATE="${IMG_DATE:-"$(date +%Y-%m-%d)"}"
 
