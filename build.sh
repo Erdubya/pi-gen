@@ -161,6 +161,7 @@ export APT_PROXY
 
 export USERNAME
 export PASSWORD
+export HOSTNAME
 
 export STAGE
 export STAGE_DIR
